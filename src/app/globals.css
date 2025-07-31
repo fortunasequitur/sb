@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 100% 96%; /* Cream background #FFF0B3 */
+    --foreground: 0 0% 0%; /* Black text #000000 */
+    --card: 45 100% 98%;
+    --card-foreground: 0 0% 0%;
+    --popover: 45 100% 98%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 164 73% 30%; /* Dark Green #15937C */
+    --primary-foreground: 45 100% 96%;
+    --secondary: 39 100% 57%; /* Orange #FFA726 */
+    --secondary-foreground: 0 0% 0%;
+    --muted: 45 30% 88%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 39 100% 57%; /* Orange accent */
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 45 100% 96%;
+    --border: 45 20% 85%;
+    --input: 0 0% 100%;
+    --ring: 164 73% 30%;
+    --radius: 0.75rem;
+    --chart-1: 164 73% 30%;
+    --chart-2: 39 100% 57%;
+    --chart-3: 45 100% 85%;
+    --chart-4: 0 0% 20%;
+    --chart-5: 164 50% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 45 100% 96%;
+    --card: 0 0% 8%;
+    --card-foreground: 45 100% 96%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 45 100% 96%;
+    --primary: 164 73% 40%;
+    --primary-foreground: 45 100% 96%;
+    --secondary: 39 100% 67%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 45 20% 60%;
+    --accent: 39 100% 67%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62% 31%;
+    --destructive-foreground: 45 100% 96%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 164 73% 40%;
+    --chart-1: 164 73% 40%;
+    --chart-2: 39 100% 67%;
+    --chart-3: 45 100% 85%;
+    --chart-4: 0 0% 80%;
+    --chart-5: 164 50% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-travel-gradient {
+    background: linear-gradient(135deg, #15937C 0%, #FFA726 100%);
+  }
+
+  .bg-travel-dark {
+    background-color: #15937C;
+  }
+
+  .bg-travel-orange {
+    background-color: #FFA726;
+  }
+
+  .bg-travel-cream {
+    background-color: #FFF0B3;
+  }
+
+  .text-travel-dark {
+    color: #15937C;
+  }
+
+  .text-travel-orange {
+    color: #FFA726;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #15937C 0%, #FFA726 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
