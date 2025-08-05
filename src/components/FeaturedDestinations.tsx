@@ -9,47 +9,47 @@ import Image from "next/image"
 const destinations = [
   {
     id: 1,
-    name: "Bali Paradise",
-    location: "Bali, Indonesia",
-    image: "https://images.unsplash.com/photo-1555400175-e2166d4d3738?w=600&h=400&fit=crop&crop=center",
-    discount: "30%",
+    name: "Malang",
+    location: "Malang, Jawa Timur",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=400&fit=crop&crop=center",
+    discount: "15%",
     rating: 4.8,
-    price: "Rp 2.500.000",
-    originalPrice: "Rp 3.500.000",
-    description: "Nikmati keindahan pantai eksotis dan budaya yang kaya"
+    price: "Mulai dari Rp. 250.000",
+    originalPrice: "",
+    description: "Wisata alam, kuliner, dan udara sejuk di kota Malang."
   },
   {
     id: 2,
-    name: "Thailand Adventure",
-    location: "Phuket, Thailand",
-    image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=400&fit=crop&crop=center",
-    discount: "25%",
-    rating: 4.9,
-    price: "Rp 4.200.000",
-    originalPrice: "Rp 5.600.000",
-    description: "Jelajahi keajaiban alam dan pantai kristal Thailand"
+    name: "Batu",
+    location: "Batu, Jawa Timur",
+    image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?w=600&h=400&fit=crop&crop=center",
+    discount: "10%",
+    rating: 4.7,
+    price: "Mulai dari Rp. 250.000",
+    originalPrice: "",
+    description: "Kota wisata pegunungan dengan banyak wahana dan taman rekreasi."
   },
   {
     id: 3,
-    name: "Raja Ampat Explorer",
-    location: "Papua Barat, Indonesia",
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop&crop=center",
+    name: "Yogyakarta",
+    location: "Yogyakarta, Indonesia",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&h=400&fit=crop&crop=center",
     discount: "20%",
-    rating: 4.7,
-    price: "Rp 6.800.000",
-    originalPrice: "Rp 8.500.000",
-    description: "Surga bawah laut dengan biodiversitas terkaya di dunia"
+    rating: 4.9,
+    price: "Mulai dari Rp. 250.000",
+    originalPrice: "",
+    description: "Kota budaya, sejarah, dan wisata kuliner khas Jawa."
   },
   {
     id: 4,
-    name: "Maldives Luxury",
-    location: "Maldives",
-    image: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=600&h=400&fit=crop&crop=center",
-    discount: "15%",
+    name: "Bali",
+    location: "Bali, Indonesia",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&crop=center",
+    discount: "25%",
     rating: 5.0,
-    price: "Rp 12.800.000",
-    originalPrice: "Rp 15.000.000",
-    description: "Pengalaman mewah di villa air dengan pemandangan spektakuler"
+    price: "Mulai dari Rp. 250.000",
+    originalPrice: "",
+    description: "Pulau Dewata dengan pantai indah dan budaya unik."
   }
 ]
 
@@ -59,17 +59,17 @@ export function FeaturedDestinations() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-secondary/10 rounded-full text-secondary text-sm font-medium mb-4">
-            <div className="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+          <div className="inline-flex items-center px-4 py-2 bg-[#E3F2ED] rounded-full text-primary text-sm font-medium mb-4">
+            <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
             Destinasi Populer
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Temukan Destinasi
+            Destinasi
             <br />
-            <span className="text-gradient">Impian Anda</span>
+            <span className="text-gradient">Paling Populer</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Pilihan destinasi terbaik dengan pemandangan menakjubkan dan pengalaman tak terlupakan
+            Berikut Destinasi Paling Populer Pilihan Kami
           </p>
         </div>
 
@@ -119,7 +119,6 @@ export function FeaturedDestinations() {
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <span className="text-lg font-bold text-primary">{destination.price}</span>
-                    <span className="text-sm text-muted-foreground line-through ml-2">{destination.originalPrice}</span>
                   </div>
                 </div>
 

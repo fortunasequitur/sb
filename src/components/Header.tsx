@@ -10,30 +10,6 @@ export function Header() {
 
   return (
     <>
-      {/* Top Bar */}
-      <div className="bg-primary text-primary-foreground py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2">
-              <Phone className="w-4 h-4" />
-              <span>+62 812-3456-7890</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Mail className="w-4 h-4" />
-              <span>info@sobatbermain.com</span>
-            </div>
-          </div>
-          <div className="text-right">
-            <span>Follow Us:</span>
-            <div className="inline-flex ml-2 space-x-2">
-              <a href="#" className="hover:text-secondary transition-colors">FB</a>
-              <a href="#" className="hover:text-secondary transition-colors">IG</a>
-              <a href="#" className="hover:text-secondary transition-colors">YT</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main Header */}
       <header className="bg-background/95 backdrop-blur-sm border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -103,7 +79,7 @@ export function Header() {
             {/* CTA Button & Mobile Menu Toggle */}
             <div className="flex items-center space-x-4">
               <Button className="hidden sm:flex bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-                Book Now
+                Hubungi Kami
               </Button>
 
               {/* Mobile Menu Toggle */}
@@ -127,7 +103,7 @@ export function Header() {
                 <a href="#about" className="px-4 py-2 text-sm hover:bg-accent rounded-md transition-colors">About</a>
                 <a href="#contact" className="px-4 py-2 text-sm hover:bg-accent rounded-md transition-colors">Contact</a>
                 <Button className="mx-4 mt-2 bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-                  Book Now
+                  Hubungi Kami
                 </Button>
               </div>
             </div>
