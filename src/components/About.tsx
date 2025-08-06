@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Star, Users, MapPin, Award, ArrowRight } from "lucide-react"
 import Image from "next/image"
+import { useEffect, useRef } from "react";
 
 const achievements = [
   {
@@ -29,26 +30,41 @@ const achievements = [
   }
 ]
 
-const awards = [
-  {
-    year: "2024",
-    title: "Best Travel Agency",
-    organization: "Indonesia Tourism Awards",
-    icon: Award
-  },
-  {
-    year: "2023",
-    title: "Customer Choice Award",
-    organization: "Travel Industry Association",
-    icon: Users
-  },
-  {
-    year: "2022",
-    title: "Excellence in Service",
-    organization: "Asia Pacific Travel Awards",
-    icon: Star
-  }
-]
+const clientLogos = [
+  "/images/clients/Astra.jpg",
+  "/images/clients/Bawaslu.png",
+  "/images/clients/DisDik Bandung.png",
+  "/images/clients/DisPen.jpg",
+  "/images/clients/Dishub.png",
+];
+
+function ClientCarousel() {
+  // Duplikasi logo untuk loop
+  const logos = clientLogos.concat(clientLogos);
+  return (
+    <div className="overflow-hidden w-full" style={{height: 100}}>
+      <div
+        className="flex gap-12 items-center w-max animate-marquee"
+        style={{width: 'max-content', minWidth: '100%'}}
+      >
+        {logos.map((src, i) => (
+          <div key={i} className="flex-shrink-0 flex items-center justify-center h-24 w-40 bg-white rounded-xl shadow border">
+            <img src={src} alt={`Client ${i+1}`} className="h-16 object-contain mx-auto" />
+          </div>
+        ))}
+      </div>
+      <style jsx global>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+          animation: marquee 20s linear infinite;
+        }
+      `}</style>
+    </div>
+  );
+}
 
 export function About() {
   return (
@@ -164,47 +180,17 @@ export function About() {
           ))}
         </div>
 
-        {/* Awards */}
-        <div className="bg-background rounded-3xl p-8 md:p-12">
+        {/* Our Client */}
+        <div className="bg-background rounded-3xl p-8 md:p-12 mt-20">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Penghargaan & Sertifikasi
+              Our Client
             </h3>
             <p className="text-muted-foreground">
-              Kebanggaan kami atas pengakuan industri dan kepercayaan pelanggan
+              Beberapa client yang telah mempercayai layanan kami
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {awards.map((award, index) => {
-              const Icon = award.icon
-              return (
-                <Card
-                  key={index}
-                  className="group text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 animate-slide-up"
-                  style={{ animationDelay: `${index * 150}ms` }}
-                >
-                  <CardContent className="p-8">
-                    <div className="w-16 h-16 bg-travel-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                      <Icon className="w-8 h-8 text-white" />
-                    </div>
-
-                    <Badge className="mb-4 bg-secondary text-secondary-foreground">
-                      {award.year}
-                    </Badge>
-
-                    <h4 className="font-bold text-foreground mb-2">
-                      {award.title}
-                    </h4>
-
-                    <p className="text-sm text-muted-foreground">
-                      {award.organization}
-                    </p>
-                  </CardContent>
-                </Card>
-              )
-            })}
-          </div>
+          <ClientCarousel />
         </div>
 
         {/* Team CTA */}

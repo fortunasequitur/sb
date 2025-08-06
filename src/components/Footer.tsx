@@ -51,32 +51,6 @@ const legalLinks = [
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
-      {/* Newsletter Section */}
-      <div className="border-b border-primary-foreground/10">
-        <div className="container mx-auto px-4 py-12">
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Dapatkan Penawaran Eksklusif
-            </h3>
-            <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Berlangganan newsletter kami dan dapatkan penawaran menarik, tips travel,
-              dan informasi destinasi terbaru langsung di inbox Anda
-            </p>
-
-            <div className="flex flex-col sm:flex-row max-w-md mx-auto gap-4">
-              <Input
-                placeholder="Masukkan email Anda"
-                className="flex-1 bg-white text-black border-0"
-              />
-              <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-                <Send className="w-4 h-4 mr-2" />
-                Subscribe
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

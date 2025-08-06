@@ -9,32 +9,32 @@ import Image from "next/image"
 const destinations = [
   {
     id: 1,
-    name: "Malang",
-    location: "Malang, Jawa Timur",
+    name: "Malang & Batu",
+    location: "Malang & Batu, Jawa Timur",
     image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=400&fit=crop&crop=center",
-    discount: "15%",
-    rating: 4.8,
+    discount: "10+ Paket Wisata",
+    rating: 4.9,
     price: "Mulai dari Rp. 250.000",
     originalPrice: "",
-    description: "Wisata alam, kuliner, dan udara sejuk di kota Malang."
+    description: "Wisata alam, kuliner, wahana, dan udara sejuk di Malang & Batu."
   },
   {
     id: 2,
-    name: "Batu",
-    location: "Batu, Jawa Timur",
-    image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?w=600&h=400&fit=crop&crop=center",
-    discount: "10%",
-    rating: 4.7,
+    name: "Bromo",
+    location: "Bromo, Jawa Timur",
+    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=400&fit=crop&crop=center",
+    discount: "10+ Paket Wisata",
+    rating: 4.9,
     price: "Mulai dari Rp. 250.000",
     originalPrice: "",
-    description: "Kota wisata pegunungan dengan banyak wahana dan taman rekreasi."
+    description: "Nikmati sunrise dan keindahan alam Gunung Bromo yang menakjubkan."
   },
   {
     id: 3,
     name: "Yogyakarta",
     location: "Yogyakarta, Indonesia",
     image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&h=400&fit=crop&crop=center",
-    discount: "20%",
+    discount: "10+ Paket Wisata",
     rating: 4.9,
     price: "Mulai dari Rp. 250.000",
     originalPrice: "",
@@ -45,8 +45,8 @@ const destinations = [
     name: "Bali",
     location: "Bali, Indonesia",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&crop=center",
-    discount: "25%",
-    rating: 5.0,
+    discount: "10+ Paket Wisata",
+    rating: 4.9,
     price: "Mulai dari Rp. 250.000",
     originalPrice: "",
     description: "Pulau Dewata dengan pantai indah dan budaya unik."
@@ -91,7 +91,7 @@ export function FeaturedDestinations() {
                 />
                 {/* Discount Badge */}
                 <Badge className="absolute top-4 left-4 bg-secondary text-secondary-foreground">
-                  {destination.discount} OFF
+                  {destination.discount}
                 </Badge>
                 {/* Rating */}
                 <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm text-white px-2 py-1 rounded-full text-sm flex items-center">

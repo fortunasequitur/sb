@@ -12,45 +12,46 @@ import {
   Car,
   Bed,
   Utensils,
-  ArrowRight
+  ArrowRight,
+  Home
 } from "lucide-react"
 
 const services = [
   {
-    icon: Plane,
-    title: "Tiket Pesawat",
-    description: "Booking tiket pesawat domestik dan internasional dengan harga terbaik dan pilihan maskapai terlengkap.",
-    features: ["Harga Kompetitif", "Proses Cepat", "24/7 Support"]
-  },
-  {
     icon: Bed,
     title: "Hotel & Resort",
-    description: "Reservasi hotel dan resort di seluruh dunia dengan berbagai pilihan kelas dan fasilitas terbaik.",
-    features: ["Hotel Bintang 5", "Resort Mewah", "Harga Terjangkau"]
+    description: "Reservasi hotel dan resort terbaik di berbagai destinasi favorit dengan harga terjangkau.",
+    features: ["Hotel Bintang 5", "Resort Mewah", "Harga Terbaik"]
   },
   {
     icon: Car,
-    title: "Transportasi",
-    description: "Layanan sewa kendaraan dan transportasi local untuk kemudahan perjalanan Anda.",
-    features: ["Mobil AC", "Driver Berpengalaman", "Flexible Schedule"]
+    title: "Sewa Mobil",
+    description: "Layanan sewa mobil harian, mingguan, atau bulanan dengan armada terbaru dan driver berpengalaman.",
+    features: ["Armada Terbaru", "Driver Berpengalaman", "Lepas Kunci/Include Driver"]
+  },
+  {
+    icon: Users,
+    title: "Sewa Motor",
+    description: "Sewa motor untuk kebutuhan perjalanan harian di kota tujuan Anda dengan harga terjangkau.",
+    features: ["Unit Terawat", "Harga Terjangkau", "Proses Mudah"]
+  },
+  {
+    icon: Home,
+    title: "Sewa Villa",
+    description: "Pilihan villa eksklusif untuk liburan keluarga, gathering, atau event spesial Anda.",
+    features: ["Villa Eksklusif", "Fasilitas Lengkap", "Lokasi Strategis"]
   },
   {
     icon: Camera,
-    title: "Tour Guide",
-    description: "Pemandu wisata profesional dan berpengalaman yang siap membantu perjalanan Anda.",
-    features: ["Guide Bersertifikat", "Multilingual", "Local Knowledge"]
+    title: "Sewa Alat Camp",
+    description: "Sewa perlengkapan camping lengkap untuk petualangan outdoor Anda tanpa repot.",
+    features: ["Tenda & Matras", "Alat Masak", "Sleeping Bag"]
   },
   {
-    icon: Utensils,
-    title: "Kuliner Tour",
-    description: "Jelajahi cita rasa autentik dari berbagai daerah dengan panduan kuliner terbaik.",
-    features: ["Food Blogger", "Hidden Gems", "Cultural Experience"]
-  },
-  {
-    icon: Shield,
-    title: "Travel Insurance",
-    description: "Perlindungan menyeluruh untuk perjalanan Anda dengan coverage yang lengkap.",
-    features: ["Medical Coverage", "Trip Cancellation", "24/7 Assistance"]
+    icon: MapPin,
+    title: "MICE",
+    description: "Layanan Meeting, Incentive, Convention, dan Exhibition untuk kebutuhan bisnis dan event perusahaan.",
+    features: ["Meeting Package", "Event Organizer", "Venue & Akomodasi"]
   }
 ]
 
@@ -83,17 +84,17 @@ export function Services() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-secondary/10 rounded-full text-secondary text-sm font-medium mb-4">
-            <div className="w-2 h-2 bg-secondary rounded-full mr-2"></div>
-            Layanan Kami
+          <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium mb-4">
+            <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
+            Layanan Lainnya
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Saatnya Menjelajah
+            Butuh Layanan Lain?
             <br />
-            <span className="text-gradient">Bersama Kami</span>
+            <span className="text-gradient">Service Kami</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Kami menyediakan layanan travel lengkap untuk memastikan perjalanan Anda berjalan lancar dan menyenangkan
+            Berikut Layanan Travel Lengkap Kami
           </p>
         </div>
 

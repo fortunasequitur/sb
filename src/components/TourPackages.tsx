@@ -9,65 +9,113 @@ import Image from "next/image"
 const packages = [
   {
     id: 1,
-    name: "Bali Cultural & Beach Escape",
-    location: "Bali, Indonesia",
-    duration: "5 Hari 4 Malam",
-    image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&h=300&fit=crop&crop=center",
-    price: "Rp 3.200.000",
-    originalPrice: "Rp 4.500.000",
-    discount: "30%",
-    rating: 4.8,
-    reviews: 124,
-    groupSize: "2-15 Orang",
+    name: "Bromo Private Trip",
+    location: "Bromo, Jawa Timur",
+    duration: "1 Hari",
+    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=300&fit=crop&crop=center",
+    price: "Rp. 350.000",
+    originalPrice: "",
+    discount: "10+ Paket Wisata",
+    rating: 4.9,
+    reviews: 1.254,
+    groupSize: "1-12 Orang",
     highlights: [
-      "Sunset di Tanah Lot",
-      "Rafting di Ayung River",
-      "Tour Ubud & Tegallalang",
-      "Pantai Kuta & Seminyak"
+      "Sunrise di Penanjakan",
+      "Kawah Bromo",
+      "Pasir Berbisik",
+      "Bukit Teletubbies"
     ],
-    includes: ["Akomodasi", "Transportasi", "Makan", "Tour Guide"],
+    includes: ["Jeep Private", "Tiket Masuk", "Snack & Air Mineral", "Tour Guide"],
     popular: true
   },
   {
     id: 2,
-    name: "Thailand Island Hopping",
-    location: "Phuket & Phi Phi Island",
-    duration: "6 Hari 5 Malam",
-    image: "https://images.unsplash.com/photo-1537956965359-7573183d1f57?w=600&h=300&fit=crop&crop=center",
-    price: "Rp 5.800.000",
-    originalPrice: "Rp 7.200.000",
-    discount: "20%",
+    name: "Bromo Open Trip",
+    location: "Bromo, Jawa Timur",
+    duration: "1 Hari",
+    image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?w=600&h=300&fit=crop&crop=center",
+    price: "Rp. 300.000",
+    originalPrice: "",
+    discount: "10+ Paket Wisata",
     rating: 4.9,
-    reviews: 89,
-    groupSize: "4-12 Orang",
+    reviews: 1.805,
+    groupSize: "1-10 Orang",
     highlights: [
-      "Maya Bay Phi Phi",
-      "James Bond Island",
-      "Snorkeling & Diving",
-      "Thai Cooking Class"
+      "Sunrise di Penanjakan",
+      "Kawah Bromo",
+      "Pasir Berbisik",
+      "Bukit Teletubbies"
     ],
-    includes: ["Hotel 4*", "Speed Boat", "All Meals", "Activities"],
+    includes: ["Jeep Sharing", "Tiket Masuk", "Snack & Air Mineral", "Tour Leader"],
     popular: false
   },
   {
     id: 3,
-    name: "Yogyakarta Heritage Tour",
-    location: "Yogyakarta, Indonesia",
-    duration: "3 Hari 2 Malam",
-    image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&h=300&fit=crop&crop=center",
-    price: "Rp 1.800.000",
-    originalPrice: "Rp 2.400.000",
-    discount: "25%",
+    name: "City Tour Malang - Batu",
+    location: "Malang & Batu, Jawa Timur",
+    duration: "1 Hari",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=300&fit=crop&crop=center",
+    price: "Rp. 250.000",
+    originalPrice: "",
+    discount: "10+ Paket Wisata",
     rating: 4.7,
-    reviews: 156,
-    groupSize: "1-20 Orang",
+    reviews: 656,
+    groupSize: "2-10 Orang",
     highlights: [
-      "Candi Borobudur",
-      "Candi Prambanan",
-      "Keraton Yogyakarta",
-      "Malioboro Street"
+      "Jatim Park / Museum Angkut",
+      "Alun-Alun Batu",
+      "Petik Apel",
+      "Wisata Kuliner Malang"
     ],
-    includes: ["Hotel", "AC Transport", "Breakfast", "Entrance Fees"],
+    includes: ["Transportasi", "Tiket Masuk", "Makan Siang", "Tour Guide"],
+    popular: false
+  },
+  {
+    id: 4,
+    name: "Paket Employee Gathering",
+    location: "Malang & Batu, Jawa Timur",
+    duration: "1 Hari",
+    image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=600&h=300&fit=crop&crop=center",
+    price: "Rp. 350.000",
+    originalPrice: "",
+    discount: "10+ Paket Wisata",
+    rating: 4.8,
+    reviews: 128,
+    groupSize: "20-100 Orang",
+    highlights: [],
+    includes: [],
+    popular: false
+  },
+  {
+    id: 5,
+    name: "Paket Family Gathering",
+    location: "Malang & Batu, Jawa Timur",
+    duration: "1 Hari",
+    image: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600&h=300&fit=crop&crop=center",
+    price: "Rp. 300.000",
+    originalPrice: "",
+    discount: "10+ Paket Wisata",
+    rating: 4.8,
+    reviews: 176,
+    groupSize: "10-50 Orang",
+    highlights: [],
+    includes: [],
+    popular: false
+  },
+  {
+    id: 6,
+    name: "Pantai Malang Selatan",
+    location: "Malang Selatan, Jawa Timur",
+    duration: "1 Hari",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=300&fit=crop&crop=center",
+    price: "Rp. 250.000",
+    originalPrice: "",
+    discount: "10+ Paket Wisata",
+    rating: 4.7,
+    reviews: 699,
+    groupSize: "2-15 Orang",
+    highlights: [],
+    includes: [],
     popular: false
   }
 ]
@@ -80,15 +128,15 @@ export function TourPackages() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium mb-4">
             <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-            Paket Wisata Terbaik
+            Paket Wisata Populer
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
             Paket Wisata
             <br />
-            <span className="text-gradient">Menakjubkan</span>
+            <span className="text-gradient">Paling Populer</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Nikmati pengalaman tak terlupakan dengan paket wisata lengkap yang telah kami siapkan khusus untuk Anda
+            Berikut Paket Wisata Paling Diminati
           </p>
         </div>
 
@@ -152,42 +200,10 @@ export function TourPackages() {
               </CardHeader>
 
               <CardContent className="pt-0">
-                {/* Highlights */}
-                <div className="mb-4">
-                  <h4 className="font-medium mb-2 flex items-center">
-                    <Camera className="w-4 h-4 mr-2" />
-                    Highlight
-                  </h4>
-                  <ul className="space-y-1">
-                    {pkg.highlights.map((highlight, idx) => (
-                      <li key={idx} className="text-sm text-muted-foreground flex items-center">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Includes */}
-                <div className="mb-6">
-                  <h4 className="font-medium mb-2 flex items-center">
-                    <Utensils className="w-4 h-4 mr-2" />
-                    Termasuk
-                  </h4>
-                  <div className="flex flex-wrap gap-1">
-                    {pkg.includes.map((include, idx) => (
-                      <Badge key={idx} variant="secondary" className="text-xs">
-                        {include}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-
                 {/* Price */}
                 <div className="flex items-center justify-between mb-6">
                   <div>
                     <span className="text-2xl font-bold text-primary">{pkg.price}</span>
-                    <span className="text-sm text-muted-foreground line-through ml-2">{pkg.originalPrice}</span>
                     <div className="text-xs text-muted-foreground">per orang</div>
                   </div>
                 </div>
