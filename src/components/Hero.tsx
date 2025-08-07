@@ -106,7 +106,7 @@ export function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm mb-6 animate-fade-in">
           <div className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></div>
-          About Sobat Bermain
+          Sobat Bermain Tour & Travel
         </div>
 
         {/* Main Heading */}
@@ -148,7 +148,7 @@ export function Hero() {
           Kami adalah Best Travel Organizer yang berada di Kota Malang.<br />
           Agendakan Event & Liburan Anda Bersama Kami!
         </p>
-        {/* Search Form - DIHAPUS */}
+
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12 animate-slide-up">
           <Button

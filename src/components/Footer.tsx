@@ -67,23 +67,28 @@ export function Footer() {
             </div>
 
             <p className="text-primary-foreground/80 mb-6 text-sm leading-relaxed">
-              Sobat Bermain Tour & Travel adalah partner terpercaya untuk mewujudkan perjalanan impian Anda.
-              Dengan pengalaman lebih dari 10 tahun, kami siap memberikan layanan terbaik.
+              Kami adalah Best Travel Organizer yang berada di Kota Malang.<br />
+              Beroperasi Sejak 2022.<br />
+              Agendakan Event & Liburan Anda Bersama Kami!
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3 mb-6">
               <div className="flex items-center text-sm">
                 <MapPin className="w-4 h-4 mr-3 text-secondary" />
-                <span>Jl. Malioboro No. 123, Yogyakarta</span>
+                <span>Permata Savira Residence, Blk. D No.4, Malang, Jawa Timur</span>
               </div>
               <div className="flex items-center text-sm">
                 <Phone className="w-4 h-4 mr-3 text-secondary" />
-                <span>+62 812-3456-7890</span>
+                <span>+62 851-6353-7020</span>
+              </div>
+              <div className="flex items-center text-sm">
+                <Phone className="w-4 h-4 mr-3 text-secondary" />
+                <span>+62 812-9064-0894</span>
               </div>
               <div className="flex items-center text-sm">
                 <Mail className="w-4 h-4 mr-3 text-secondary" />
-                <span>info@sobatbermain.com</span>
+                <span>support@sobatbermain.com</span>
               </div>
             </div>
 
@@ -170,10 +175,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-sm text-primary-foreground/80">
-                © 2024 Sobat Bermain Tour & Travel. All rights reserved.
-              </p>
-              <p className="text-xs text-primary-foreground/60">
-                Licensed & Insured Travel Agency | IATA Member
+                © 2025 Sobat Bermain Tour & Travel. All rights reserved.
               </p>
             </div>
 

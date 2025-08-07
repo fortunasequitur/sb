@@ -42,14 +42,14 @@ function ClientCarousel() {
   // Duplikasi logo untuk loop
   const logos = clientLogos.concat(clientLogos);
   return (
-    <div className="overflow-hidden w-full" style={{height: 100}}>
+    <div className="overflow-x-auto overflow-y-visible w-full px-2 md:px-0" style={{height: 120}}>
       <div
-        className="flex gap-12 items-center w-max animate-marquee"
+        className="flex gap-6 md:gap-12 items-center w-max animate-marquee"
         style={{width: 'max-content', minWidth: '100%'}}
       >
         {logos.map((src, i) => (
-          <div key={i} className="flex-shrink-0 flex items-center justify-center h-24 w-40 bg-white rounded-xl shadow border">
-            <img src={src} alt={`Client ${i+1}`} className="h-16 object-contain mx-auto" />
+          <div key={i} className="flex-shrink-0 flex items-center justify-center h-28 w-48 md:h-24 md:w-40 bg-white rounded-xl shadow border">
+            <img src={src} alt={`Client ${i+1}`} className="h-20 md:h-16 object-contain mx-auto" />
           </div>
         ))}
       </div>
@@ -191,22 +191,6 @@ export function About() {
             </p>
           </div>
           <ClientCarousel />
-        </div>
-
-        {/* Team CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-primary/5 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              Bertemu dengan Tim Kami
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Tim profesional yang berpengalaman dan berdedikasi untuk memberikan pelayanan terbaik
-            </p>
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Users className="w-4 h-4 mr-2" />
-              Lihat Tim Kami
-            </Button>
-          </div>
         </div>
       </div>
     </section>
